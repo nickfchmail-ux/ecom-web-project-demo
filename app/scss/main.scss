@@ -1,0 +1,30 @@
+// Abstracts: Load utilities first for reuse
+@use "abstracts/variables";
+@use "abstracts/mixins";
+@use "abstracts/functions";
+
+// Vendors: Third-party overrides early
+@use "vendors/normalize";
+
+// Base: Global foundations next
+@use "base/reset";
+@use "base/typography";
+
+// Layout: Structural elements after base
+@use "layout/header";
+@use "layout/navigation";
+
+// Components: UI pieces that build on layout
+@use "components/button";
+@use "components/card";
+@use "components/nav";
+@use "components/hero";
+@use "components/arrow";
+
+// Pages: Specific overrides for views
+@use "pages/home";
+
+// Themes: Final layer for customizations
+@use "themes/theme";
+
+@use "layout/carousel";

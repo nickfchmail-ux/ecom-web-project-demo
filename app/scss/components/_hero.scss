@@ -1,0 +1,100 @@
+// ...existing code...
+@use "../abstracts/variables" as vars;
+@import url("https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Shojumaru&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Shojumaru&family=Unkempt:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Shojumaru&family=Tagesschrift&family=Unkempt:wght@400;700&display=swap");
+.logo-container {
+  grid-column: 1 / -1;
+
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 0;
+}
+.logo {
+  width: clamp(4rem, 10vw, 20rem);
+  height: auto;
+}
+
+.brand-name {
+  color: vars.$primary-color-dark;
+  margin-bottom: 0;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  width: max-content;
+  font-family: "Shojumaru", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero {
+  background-image: linear-gradient(
+      rgba(vars.$primary-color, 0.93),
+      rgba(vars.$primary-color, 0.93)
+    ),
+    url("/ocean.jpg");
+
+  background-size: cover;
+
+  display: grid;
+
+  grid-template-columns: [start-left] 1fr [end-left start-right] 1fr [end-right];
+  grid-template-rows:
+    minmax(min-content, 1fr) 1fr[con-start] minmax(min-content, 1fr)
+    [con-end] 1fr;
+  &__content {
+    grid-column: start-left / end-left;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: center;
+    align-items: start;
+    justify-items: left;
+    grid-row: con-start / con-end;
+
+    display: grid;
+    grid-template-columns: 1fr minmax(min-content, max-content) 1fr;
+  }
+
+  &__title {
+    font-size: 3rem;
+    grid-column: 2 / 3;
+    font-size: clamp(1rem, 2vw, 3rem);
+    color: vars.$secondary-color;
+
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    grid-column: 2 / 3;
+    font-size: clamp(1rem, 2vw, 3rem);
+    color: vars.$secondary-color;
+    margin-top: 0;
+
+    font-family: "Unkempt", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    grid-column: 2 / 3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &__promotion {
+    grid-column: start-right / end-right;
+    grid-row: con-start / con-end;
+  }
+}
