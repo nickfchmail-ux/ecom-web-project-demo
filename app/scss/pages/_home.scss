@@ -3,7 +3,7 @@
 
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: [nav-start] min-content [nav-end] min-content [view-port-end];
-
+  overflow: hidden;
   .nav {
     grid-column: 1 / -1;
   }
