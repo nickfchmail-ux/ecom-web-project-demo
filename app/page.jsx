@@ -8,12 +8,7 @@ import Script from "next/script";
 
 // In your JSX:
 export default function Home() {
-  const picURL = [
-    "/spirit1.jpg",
-    "/spirit2.jpg",
-    "/spirit3.jpg",
-    "/spirit4.jpg",
-  ];
+  const picURL = ["/spirit1.jpg", "/spirit2.jpg", "/spirit3.jpg"];
 
   const slogan = [
     "Chase the Horizon, Fear No Path",
