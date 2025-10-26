@@ -2,7 +2,7 @@
   display: grid;
 
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: [nav-start] min-content [nav-end]85vh [view-port-end];
+  grid-template-rows: [nav-start] min-content [nav-end] min-content [view-port-end];
 
   .nav {
     grid-column: 1 / -1;

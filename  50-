@@ -1,0 +1,17 @@
+[33mcommit a1a615496aca553e67c5fa60d594f24349a5868e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mresponsive-ver[m[33m)[m
+Author: nick.ch.fong <nickfchmail@gmail.com>
+Date:   Sun Oct 26 15:26:14 2025 +0800
+
+    fix search button UI
+
+[33mcommit 6477a5e2da3ec08b14ec0b8e8b839f09198a1e9e[m
+Author: nick.ch.fong <nickfchmail@gmail.com>
+Date:   Sun Oct 26 14:36:39 2025 +0800
+
+    add config
+
+[33mcommit 1cc99221120f9c0ae82cfa0f743566d2bb18952e[m
+Author: nick.ch.fong <nickfchmail@gmail.com>
+Date:   Mon Oct 20 16:12:01 2025 +0800
+
+    Initial commit from Create Next App

@@ -53,7 +53,7 @@
   img {
     height: 1.5rem;
     width: 1.5rem;
-    transform: translateY(2px);
+    transform: translateY(1px);
   }
 }
 
@@ -61,7 +61,7 @@
   &__search {
     position: absolute;
     right: 30px;
-    transform: translateY(5px);
+    transform: translateY(4px);
     border: none;
     background-color: transparent;
     &:hover {
