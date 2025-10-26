@@ -20,8 +20,7 @@
 @use "components/nav";
 @use "components/hero";
 @use "components/arrow";
-
-// Pages: Specific overrides for views
+@use "components/spiritBanner"; // Pages: Specific overrides for views
 @use "pages/home";
 
 // Themes: Final layer for customizations

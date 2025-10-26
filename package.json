@@ -27,5 +27,13 @@
     "eslint-config-next": "15.5.6",
     "sass": "^1.93.2",
     "typescript": "^5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickfchmail-ux/ecom-web-project-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nickfchmail-ux/ecom-web-project-demo/issues"
+  },
+  "homepage": "https://github.com/nickfchmail-ux/ecom-web-project-demo#readme"
 }

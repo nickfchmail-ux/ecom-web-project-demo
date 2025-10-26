@@ -2,13 +2,20 @@
   display: grid;
 
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: [nav-start] min-content [nav-end] min-content [view-port-end];
+  grid-template-rows: [nav-start] min-content [nav-end hero-start] min-content [hero-end spirit-start] min-content [spirit-end] 1fr [view-port-end];
   overflow: hidden;
   .nav {
     grid-column: 1 / -1;
+    grid-row: nav-start / nav-end;
   }
 
   .hero {
     grid-column: 1 / -1;
+    grid-row: hero-start / hero-end;
+  }
+
+  .spiritBanner {
+    grid-column: 1 / -1;
+    grid-row: spirit-start / spirit-end;
   }
 }
